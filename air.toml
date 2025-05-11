@@ -1,0 +1,18 @@
+# air.toml
+
+# Watch these files for changes
+root = "."
+tmp_dir = "tmp"
+
+[build]
+  cmd = "go run cmd/main.go"      # Command to run your app (for Go + Fiber, use go run)
+  bin = "tmp/main"               # Where to store compiled binary
+  full_bin_path = false
+
+[log]
+  level = "info"
+  timestamp = true
+
+[colors]
+  main = "yellow"
+  time = "cyan"
